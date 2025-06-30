@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marcelo Contreras | Proyectos</title>
+  <link rel="stylesheet" href="assets/css/Style.css" />
+</head>
+<style>
+  .barra-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* separa los íconos horizontalmente */
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+  .ache {
+  color: #ee6969;
+}
+  .dark-mode .ache{
+  color: #94d3c4;
+}
+  .nav-proyectos a {
+  color: white; 
+  text-decoration: none
+}
+</style>
+<body>
+
+<header class="navbar">
+  <nav>
+    <a href="assets/documents/cv.pdf" class="mi-cv" target="_blank">📄 Marcelo Alejandro Contreras Laflor - CV</a>
+    <a href="index.html">Home</a>
+    <a href="habilidades.html" aria-current="page">Habilidades</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="Contacto.html">Contacto</a>
+    <button id="modo-btn" class="switch-modo" aria-label="Modo Oscuro"></button>
+  </nav>
+</header>
+
+<main>
+  <section class="habilidades" aria-labelledby="titulo-habilidades">
+    <img src="assets/img/marcedrkk.jpg" class="marcedrkk" alt="logo Marcelo Contreras" />
+    <h2 id="titulo-habilidades">Mis Proyectos</h2> 
+    <strong style="text-align: center;"><p>Aquí podras ver algunos de los proyectos en los que he trabajado tanto de forma autonoma, y en mi proceso de formación profesional</p></strong>
+
+    <nav class="nav-proyectos">
+      <ul>
+        <li><a href="#" onclick="showSection('Personales')">👤 propios</a></li>
+        <li><a href="#" onclick="showSection('Programación-Web')">🌐 WEB</a></li>
+      </ul>
+    </nav>
+
+  <div id="Personales" class="section">
+    <h2 style="text-align: center;">Proyectos personales</h2>
+    <div class="barra-iconos">
+      <img src="assets/iconos/html.png" alt="HTML" class="icono-lenguaje"/>
+      <img src="assets/iconos/js.png" alt="JavaScript" class="icono-lenguaje"/>
+      <img src="assets/iconos/css.webp" alt="css" class="icono-lenguaje"/>
+      <img src="assets/iconos/python.png" alt="python" class="icono-lenguaje">
+      <img src="assets/iconos/java.webp" alt="java" class="icono-lenguaje">
+    </div>
+    <details class="proyecto">
+      <summary>Web propio</summary>
+      <ul>
+        <li>Este repositorio contiene mi página web personal, donde logre aplicar algunos de los conceptos aprendidos en clases y por eso sirvio como ejercicio para mejorar mis habilidades en desarrollo web.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/web-propio-.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>  
+    <details class="proyecto">
+      <summary>Practica de patrones de diseño</summary>
+      <ul>
+        <li>Este repositorio, contiene un codigo en el cual aplique 4 patrones de diseño en JAVA (adapter, bridge, singleton, prototype).</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Practica-de-Patrones.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>
+    <details class="proyecto">
+      <summary>Ejercicio Final curso básico Python</summary>
+      <ul>
+        <li>Este repositorio contiene el ejercicio final que tuve que realizar en un curso basico de Python, el cual me ayudo a entender de mucho mejor manera el uso de diferentes funciónes. Mi tarea era escribir un simple programa que simule jugar a tic-tac-toe (nombre en inglés) con el usuario.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Proyecto-Final-Curso-basico-Python.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>   
+    <details class="proyecto">
+      <summary>curso html (aplicando lo aprendido)</summary>
+      <ul>
+        <li>Este repositorio contiene uno de los ejercicios que tuve en mi curso "Introducción al desarrollo WEB", en el cual tuve que aplicar todo lo aprendido en el curso introductorio (simule una tienda de venta de figuras).</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/curso-html-aplicando-lo-aprendido-.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details> 
+    <details class="proyecto">
+      <summary>Space Invaders ST</summary>
+      <ul>
+        <li>Este repositorio contiene mi versión del famosísimo juego Space Invaders, en la que implementé diferentes niveles de dificultad y efectos visuales de explosiones al colisionar las balas con los enemigos.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Space-Invaders-ST.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>
+  </div>
+
+  <div id="Programación-Web" class="section"> 
+    <h2 style="text-align: center;" class="ache"> Programación WEB</h2>
+    <div class="barra-iconos">
+      <img src="assets/iconos/html.png" alt="HTML" class="icono-lenguaje"/>
+      <img src="assets/iconos/js.png" alt="JavaScript" class="icono-lenguaje"/>
+      <img src="assets/iconos/css.webp" alt="css" class="icono-lenguaje"/>
+      <img src="assets/iconos/SQLite.webp" alt="SQLite" class="icono-lenguaje">
+      <img src="assets/iconos/node.js.png" alt="node" class="icono-lenguaje">
+    </div>
+    <h3 style="text-align: center;" class="ache">Unidad 1</h3>
+    <h3 style="text-align: center;" class="ache">(algunos proyectos se me perdieron con el pendrive, como el de la biblioteca finiquitado posteriormente)</h3>
+    <details class="proyecto">
+      <summary>semana 5 - N-tek (techsoluciones)</summary>
+      <ul>
+        <li>Este repositorio contiene la actividad de la semana 5 de programación web, sin embargo no logre implementar el login aunque si pude realizar el contacto gracias a formsubmit, el proyecto se llama N-tek y esta enfocado en la innovación tecnologica.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Semana-5---Techsoluciones---N-tek-.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>
+    <details class="proyecto">
+      <summary>Entrega Progreso Programación web Unidad 1</summary>
+      <ul>
+        <li>Este repositorio contiene mi página web correspondiente a la actividad de la semana 3 de la Unidad 1. En esta actividad, la interfaz está diseñada para representar un aula virtual hipotética de "Educonecta</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/-Entrega-Progreso-Programaci-n-web-Unidad-1.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>
+    <details class="proyecto">
+      <summary>actividad bonus repaso pp1</summary>
+      <ul>
+        <li>Este repositorio contiene la actividad "Actividad Bonus Repaso PP1", en la que nos enfocamos en practicar el uso de un contenedor genérico como div, con el objetivo de crear tarjetas que simulan el perfil de un trabajador.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/-actividad-bonus-repaso-pp1.git" style="text-decoration: none; color: white;" target="_blank" >Ir a GitHub</a>
+      </ul>
+    </details>
+    <h3 style="text-align: center;" class="ache">Unidad 2</h3>
+    <details  class="proyecto">
+      <summary>Tarea Lunes 21 04</summary>
+      <ul>
+        <li>Esta actividad estuvo pensada para ayudarme a practicar cómo hacer consultas a una base de datos llamada "Sqlite". Cada ejercicio está explicado paso a paso, con ejemplos y una breve explicación para que asi, pueda entender cada consulta.</li>
+        <button class="btn-general"><a href="assets/documents/Actividad_SQL_Biblioteca_Detallada_MARCELO_CONTRERAS.docx" style="text-decoration: none; color: white;">Descargar</a></button>
+      </ul>    
+    </details>
+    <details  class="proyecto">
+      <summary>Evaluacion N°2</summary>
+      <ul>
+        <li>Esta evaluación, consto con 3 partes, la <strong>parte 1 </strong>es un documento escrito en el cual se deben resolver algunas necesidades, identificando requerimientos y pensando en la implementación futuras.</li>
+        <button class="btn-general"><a href="assets/documents/Evaluacion Programacion web_PARTE1_MARCELO_CONTRERAS.pdf" style="text-decoration: none; color: white;" target="_blank">Descargar</a></button>
+        <li>Este repositorio contiene la Parte 2 de la 'Evaluación N.º 2', correspondiente a un avance del que posteriormente fue el Proyecto Final (Parte 3). En esta etapa se trabajó con el caso 'Sistema Seguro de Gestión Clínica para la Institución Médica Vitalis', donde debían implementarse ciertos requerimientos específicos.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Evaluacion-N-2---parte-2.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+        <li>Este repositorio contiene la Parte 3 de la 'Evaluación N.º 2', correspondiente a la entrega de la version final del proyecto del caso de: 'Sistema Seguro de Gestión Clínica para la Institución Médica Vitalis'.</li>
+        <h4>Descargar informe  👉</h4>
+        <button class="btn-general"><a href="assets/documents/INFORME_EVALUACION_MARCELO_CONTRERAS.pdf" style="text-decoration: none; color: white;" target="_blank">Descargar</a></button>
+        <h4>GitHub  👉</h4>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Parte-3-Ev2.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+      </ul>
+    </details>
+    <details class="proyecto">
+      <summary>Evaluación final unidad 2</summary>
+      <ul>
+        <li>Esta evaluacion consto de un avance y la entrega final del proyecto, el cual tuvo que ser prensentado frente al profesor.</li>
+        <h4>Avance</h4>
+        <li>Este repositorio contiene el avance de la Evaluación Final de la Unidad 2, en el que se logró implementar principalmente la estructura, aunque aún queda mucha implementación por realizar.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Avance-Evaluaci-n-final-Unidad-2.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+        <li>Este repositorio contiene mi página web, la cual fue realizada como parte de la evaluación final de la Unidad 2 de la asignatura "Programación Web". Representó un gran esfuerzo por parte de nuestro grupo de trabajo (Benjamin, Kameron y yo), y aunque no todos los requerimientos fueron implementados, la mayoría sí lo fueron.</li>
+        <button type="submit" class="btn-general"><a href="https://github.com/marcedrkk/Evaluaci-n-final-unidad-2.git" style="text-decoration: none; color: white;" target="_blank">Ir a GitHub</a></button>
+        <h4>Documentación 👉</h4>
+        <button class="btn-general"><a href="assets/documents/Documentacion_evaluacionWeb_VerdeVital.pdf" style="text-decoration: none; color: white;" target="_blank">Descargar</a></button>
+        <h4>Presentación 👉</h4>
+        <button class="btn-general"><a href="assets/documents/VerdeVital.pptx" style="text-decoration: none; color: white;">Descargar</a></button>
+      </ul>
+    </details>
+  </div>
+  </details>
+  </section>
+</main>
+
+<script src="assets/js/funcionality.js"></script>
+
+</body>
+</html>
